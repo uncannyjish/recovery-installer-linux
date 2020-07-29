@@ -13,3 +13,7 @@ Contains Minimal ADB & Fastboot.
 Download Link : https://github.com/uncannyjish/recovery-installer-linux/releases
 
 Please don't tamper the directory structure and follow the instructions carefully.
+
+Feedbacks are appreciated.
+
+Telegram - https://t.me/talktouncannyjish
