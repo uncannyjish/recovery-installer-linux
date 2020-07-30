@@ -5,14 +5,16 @@
 
 Disclaimer: I'm not responsible for any damage that occurs to your device by the improper use of this tool or not following the instructions. Please understand the risks before proceeding further.
 
-The tool only supports Redmi Note 8(Ginkgo) as of now.
+Supported Devices: Redmi 4x(santoni), Redmi Note 4x(Mido), Redmo note 8(Ginkgo)
 
 Prequisites:
 
-1. Redmi Note 8(ginkgo) with unlocked bootloader
-2. TWRP Recovery - https://dl.twrp.me/ginkgo
+1. A supported phone with unlocked bootloader
+2. TWRP Recovery - https://twrp.me/Devices/Xiaomi/
 
-Download the latest twrp recovery image and rename it to "recovery_ginkgo".
+Download the latest twrp recovery image and rename it to "recovery_<devicename>".
+
+For e.g : If you have "mido", rename the recovery image to "recovery_mido"
 
 Instructions:
 
@@ -20,11 +22,9 @@ Instructions:
 2. Copy the renamed recovery image into the folder named "images".
 3. Open the folder named "Linux".
 4. Right Click anywhere and open a terminal.
-5. Type ./twrp_installer_linux.sh and press enter.
+5. Type ./start.sh and press enter.
 
-TWRP will be installed and your phone will automatically boot into it.
-
-If you encounter a "system destroyed" while booting to recovery anytime, you could just run ./destroyed_fix_windows.sh the same way.
+You will be provided options to "Install Recovery" and "Fix System Destroyed" as well select your device.
 
 Note: Please don't alter the folders or files. The zip is to be extracted completely and used as it is provided. 
 It's user's own responsibility if any damage occurs to the device due to tampering of the files.
