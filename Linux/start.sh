@@ -2,7 +2,7 @@
 
 clear
 printf "\n======================================"
-printf "\n TWRP Installer 0.1 by @uncannyjish"
+printf "\n TWRP Installer 0.2 by @uncannyjish"
 printf "\n======================================\n\n"
 
 choices=("Install Recovery"
