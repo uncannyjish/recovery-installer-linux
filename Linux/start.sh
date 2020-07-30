@@ -1,0 +1,72 @@
+#!/usr/bin/env bash
+
+clear
+printf "\n======================================"
+printf "\n TWRP Installer 0.1 by @uncannyjish"
+printf "\n======================================\n\n"
+
+choices=("Install Recovery"
+	 "Fix System Destroyed"
+	 "Exit")
+	 
+devices=("Mido"
+	 "Ginkgo"
+	 "Santoni"
+	 "Return to Main Menu")
+	 
+fix=("Ginkgo"
+     "Return to Main Menu")
+     
+PS3="Enter your choice => "
+	 
+while [ "$M" != 0 ]; do
+	printf "\nWhat do you want to do?\n\n"
+	select C in "${choices[@]}"; do
+		case "$C" in 
+			"Install Recovery" ) printf "\n\n" 
+				select D in "${devices[@]}" ; do
+				case "$D" in 
+					"Mido" ) `dirname $0`/installer.sh mido
+					clear
+					break 2
+					;;
+					"Ginkgo" ) `dirname $0`/installer.sh ginkgo
+					clear
+					break 2
+					;;
+					"Santoni" ) `dirname $0`/installer.sh santoni
+					clear
+					break 2
+					;;
+					"Return to Main Menu" ) break 2
+					;;
+					* ) printf "\n\nCan't you read?\n\n"
+					break
+					;;
+				esac
+				done
+				;;
+			"Fix System Destroyed" ) printf "\n\n"
+				select D in "${fix[@]}" ; do
+				case "$D" in 
+					"Ginkgo" ) `dirname $0`/fix.sh ginkgo
+					;;
+					"Return to Main Menu" ) break 2
+					;;
+					* ) printf "\n\nCan't you read?\n\n"
+					;;
+				esac
+				done
+				;;
+			"Exit" ) printf "\n\nExiting....\n\n" 
+				M=1
+				break 2
+				;;
+			* ) printf "\n\nCan't you read?\n\n"
+				break
+				;;
+		esac
+	done
+done
+
+exit 0
