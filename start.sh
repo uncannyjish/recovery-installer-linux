@@ -12,6 +12,7 @@ choices=("Install Recovery"
 devices=("Mido"
 	 "Ginkgo"
 	 "Santoni"
+	 "Willow"
 	 "Return to Main Menu")
 	 
 fix=("Ginkgo"
@@ -35,6 +36,10 @@ while [ "$M" != 0 ]; do
 					break 2
 					;;
 					"Santoni" ) `dirname $0`/Bash/installer.sh santoni
+					clear
+					break 2
+					;;
+					"Willow" ) `dirname $0`/Bash/installer.sh willow
 					clear
 					break 2
 					;;
