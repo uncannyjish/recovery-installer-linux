@@ -4,9 +4,9 @@ Disclaimer : I'm not responsible for any damage inflicted to the device by the u
 
 An automated TWRP installer for Linux Users.
 
-A simple attempt to make the TWRP installation process easier for unlocked devices. 
+A simple attempt to make the TWRP installation process easier for unlocked devices.
 
-Supported Devices : Redmi 4x(Santoni), Redmi Note 4x(Mido), Redmi Note 8(Ginkgo), Redmi Note 8T(Willow)
+Supported Devices : Redmi 4x(Santoni), Redmi Note 4x(Mido), Redmi Note 8(Ginkgo), Redmi Note 8T(Willow), Redmi K20 Pro
 
 Contains Minimal ADB & Fastboot.
 
