@@ -10,7 +10,7 @@ if [ $? -ne 0 ] ; then echo "Flash vbmeta error"; exit 1; fi
 
 printf "\n\nIssue fixed... Flashing recovery and booting...\n\n" 
 
-"`dirname $0`/../platform-tools/fastboot" flash recovery "`dirname $0`/../images/recovery_$1.img"
+"`dirname $0`/../platform-tools/fastboot" flash recovery "`dirname $0`/../images/$1.img"
 if [ $? -ne 0 ] ; then echo "Flash recovery error"; exit 1; fi
 
-"`dirname $0`/../platform-tools/fastboot" boot "`dirname $0`/../images/recovery_$1.img"
+"`dirname $0`/../platform-tools/fastboot" boot "`dirname $0`/../images/$1.img"

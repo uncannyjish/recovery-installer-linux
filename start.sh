@@ -2,7 +2,7 @@
 
 clear
 printf "\n======================================"
-printf "\n TWRP Installer 0.2 by @uncannyjish"
+printf "\n TWRP Installer 0.3 by @uncannyjish"
 printf "\n======================================\n\n"
 
 choices=("Install Recovery"
@@ -13,6 +13,7 @@ devices=("Mido"
 	 "Ginkgo"
 	 "Santoni"
 	 "Willow"
+	 "Raphael"
 	 "Return to Main Menu")
 	 
 fix=("Ginkgo"
@@ -40,6 +41,10 @@ while [ "$M" != 0 ]; do
 					break 2
 					;;
 					"Willow" ) `dirname $0`/Bash/installer.sh willow
+					clear
+					break 2
+					;;
+					"Raphael" ) `dirname $0`/Bash/installer.sh raphael
 					clear
 					break 2
 					;;

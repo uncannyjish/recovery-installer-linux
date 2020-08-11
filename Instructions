@@ -1,5 +1,5 @@
 =================================================================
-	TWRP Installer 0.2 for Linux by @uncannyjish	
+	TWRP Installer 0.3 for Linux by @uncannyjish	
 =================================================================
 
 
@@ -10,21 +10,22 @@ Supported Devices: Redmi 4x(santoni), Redmi Note 4x(Mido), Redmo note 8(Ginkgo),
 Prequisites:
 
 1. A supported phone with unlocked bootloader
-2. TWRP Recovery - https://twrp.me/Devices/Xiaomi/
+2. Supported reovery for yout device
 
-Download the latest twrp recovery image and rename it to "recovery_<devicename>".
+Download the latest recovery image and rename it to "<devicename>".
 
-For e.g : If you have "mido", rename the recovery image to "recovery_mido"
+For e.g : If you have "mido", rename the recovery image to "mido"
+
+P.S : Some recoveries ship as zipped folders. Extract the recovery image and use it. The tool only supports img files.
 
 Instructions:
 
 1. Extract the zip.
 2. Copy the renamed recovery image into the folder named "images".
-3. Open the folder named "Linux".
-4. Right Click anywhere and open a terminal.
-5. Type ./start.sh and press enter.
+3. Right Click anywhere in the folder(not on a file) and open a terminal.
+4. Type ./start.sh and press enter.
 
-You will be provided options to "Install Recovery" and "Fix System Destroyed" as well select your device.
+Put phone in fastboot mode and select "Fix System Destroyed" if you encounter that on ginkgo.
 
 Note: Please don't alter the folders or files. The zip is to be extracted completely and used as it is provided. 
 It's user's own responsibility if any damage occurs to the device due to tampering of the files.
