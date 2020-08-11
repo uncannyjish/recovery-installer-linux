@@ -28,23 +28,7 @@ while [ "$M" != 0 ]; do
 			"Install Recovery" ) printf "\n\n" 
 				select D in "${devices[@]}" ; do
 				case "$D" in 
-					"Mido" ) `dirname $0`/Bash/installer.sh mido
-					clear
-					break 2
-					;;
-					"Ginkgo" ) `dirname $0`/Bash/installer.sh ginkgo
-					clear
-					break 2
-					;;
-					"Santoni" ) `dirname $0`/Bash/installer.sh santoni
-					clear
-					break 2
-					;;
-					"Willow" ) `dirname $0`/Bash/installer.sh willow
-					clear
-					break 2
-					;;
-					"Raphael" ) `dirname $0`/Bash/installer.sh raphael
+					Mido|Ginkgo|Santoni|Willow|Raphael) $SHELL `dirname $0`/Bash/installer.sh "${D,,}"
 					clear
 					break 2
 					;;
@@ -59,12 +43,12 @@ while [ "$M" != 0 ]; do
 			"Fix System Destroyed" ) printf "\n\n"
 				select D in "${fix[@]}" ; do
 				case "$D" in 
-					"Ginkgo" ) `dirname $0`/Bash/fix.sh ginkgo
+					Ginkgo) $SHELL `dirname $0`/Bash/fix.sh ginkgo
 					clear break 2
 					;;
 					"Return to Main Menu" ) break 2
 					;;
-					* ) printf "\n\nCan't you read?\n\n"
+					*) printf "\n\nCan't you read?\n\n"
 					break
 					;;
 				esac
