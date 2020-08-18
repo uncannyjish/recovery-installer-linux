@@ -1,31 +1,39 @@
 =================================================================
-	TWRP Installer 0.3 for Linux by @uncannyjish	
+	TWRP Installer 0.6 for Linux by @uncannyjish	
 =================================================================
 
 
-Disclaimer: I'm not responsible for any damage that occurs to your device by the improper use of this tool or not following the instructions. Please understand the risks before proceeding further.
+Disclaimer: I'm not responsible for any damage that occurs to your device by the improper use of this tool or not following the instructions.
+Please understand the risks before proceeding further.
 
-Supported Devices: Redmi 4x(santoni), Redmi Note 4x(Mido), Redmi note 8(Ginkgo), Redmi Note 8T(Willow), Redmi K20 Pro(Raphael)
+Supported Devices:
+1. Redmi 4X(Santoni)
+2. Redmi Note 4X(Mido)
+3. Redmi Note 5/Redmi 5 Plus(Vince)
+4. Redmi Note 5 Pro(Whyred)
+5. Redmi Note 6 Pro(Tulip)
+6. Redmi Note 7/7S(Lavender)
+7. Redmi Note 7 Pro(Violet)
+8. Redmi Note 8(Ginkgo)
+9. Redmi Note 8T(Willow)
+10. Redmi K20(Davinci)
+11. Redmi K20 Pro(Raphael)
+12. Pocophone F1(Beryllium)
 
 Prequisites:
-
 1. A supported phone with unlocked bootloader
 2. Supported reovery for yout device
 
+Preparations:
 Download the latest recovery image and rename it to "<devicename>".
-
 For e.g : If you have "mido", rename the recovery image to "mido"
-
 P.S : Some recoveries ship as zipped folders. Extract the recovery image and use it. The tool only supports img files.
 
 Instructions:
-
-1. Extract the zip.
+1. Extract the zip to a folder. {Refer Note}
 2. Copy the renamed recovery image into the folder named "images".
 3. Right Click anywhere in the folder(not on a file) and open a terminal.
 4. Type ./start.sh and press enter.
-
-Put phone in fastboot mode and select "Fix System Destroyed" if you encounter that on ginkgo.
 
 Note: Please don't alter the folders or files. The zip is to be extracted completely and used as it is provided. 
 It's user's own responsibility if any damage occurs to the device due to tampering of the files.
