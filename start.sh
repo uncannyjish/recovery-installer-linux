@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 clear
-printf "\n======================================"
-printf "\n TWRP Installer 0.6 by @uncannyjish"
-printf "\n======================================\n\n"
+printf "\n================================================"
+printf "\n Uncanny Recovery Installer 0.6 by @uncannyjish"
+printf "\n================================================\n\n"
 
 choices=("Install Recovery"
 	 "Fix System Destroyed"

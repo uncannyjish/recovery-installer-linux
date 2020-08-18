@@ -1,4 +1,4 @@
-# Recovery Installer for Linux
+# Uncanny Recovery Installer for Linux
 
 Disclaimer : I'm not responsible for any damage inflicted to the device by the usage of this software.
 Please undertand the risks before using it.
