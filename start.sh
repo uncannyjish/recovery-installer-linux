@@ -24,6 +24,7 @@ devices=("Santoni"
 	 "Return to Main Menu")
 	 
 fix=("Ginkgo"
+	 "Violet"
      "Return to Main Menu")
      
 PS3="Enter your choice => "
@@ -50,7 +51,7 @@ while [ "$M" != 0 ]; do
 			"Fix System Destroyed") printf "\n\n"
 				select D in "${fix[@]}" ; do
 				case "$D" in 
-					Ginkgo) $SHELL "`dirname $0`/Bash/fix.sh" "${D,,}"
+					Ginkgo|Violet) $SHELL "`dirname $0`/Bash/fix.sh" "${D,,}"
 					clear break 2
 					;;
 					"Return to Main Menu") break 2
