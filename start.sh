@@ -2,14 +2,16 @@
 
 clear
 printf "\n================================================"
-printf "\n Uncanny Recovery Installer 0.6 by @uncannyjish"
+printf "\n Uncanny Recovery Installer 0.7 by @uncannyjish"
 printf "\n================================================\n\n"
 
 choices=("Install Recovery"
 	 "Fix System Destroyed"
 	 "Exit")
 	 
-devices=("Santoni"
+devices=("Land"
+	 "Santoni"
+	 "Kenzo"
 	 "Mido"
 	 "Vince"
 	 "Whyred"
@@ -36,9 +38,24 @@ while [ "$M" != 0 ]; do
 			"Install Recovery") printf "\n\n" 
 				select D in "${devices[@]}" ; do
 				case "$D" in 
-					Santoni|Mido|Vince|Whyred|Tulip|Lavender|Violet|Ginkgo|Willow|Davinci|Raphael|Beryllium) $SHELL "`dirname $0`/Bash/installer.sh" "${D,,}"
+					Land|Santoni|Kenzo|Mido|Vince|Whyred|Tulip|Lavender|Violet|Ginkgo|Willow|Beryllium) $SHELL "`dirname $0`/Bash/installer.sh" "${D,,}"
 					clear
 					break 2
+					;;
+					Raphael|Davinci) read -p "Indian Variant (y/n): " i
+					case "$i" in
+						y|Y) $SHELL "`dirname $0`/Bash/installer.sh" "${D,,}in"
+						clear
+						break 2;
+						;;
+						n|N) $SHELL "`dirname $0`/Bash/installer.sh" "${D,,}"
+						clear
+						break 2;
+						;;
+						*) printf "\n\nCan't you read?\n\n"
+						break
+						;;
+					esac
 					;;
 					"Return to Main Menu") break 2
 					;;
@@ -52,7 +69,8 @@ while [ "$M" != 0 ]; do
 				select D in "${fix[@]}" ; do
 				case "$D" in 
 					Ginkgo|Violet) $SHELL "`dirname $0`/Bash/fix.sh" "${D,,}"
-					clear break 2
+					clear
+					break 2
 					;;
 					"Return to Main Menu") break 2
 					;;
