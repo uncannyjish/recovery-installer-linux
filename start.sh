@@ -38,19 +38,21 @@ while [ "$M" != 0 ]; do
 			"Install Recovery") printf "\n\n" 
 				select D in "${devices[@]}" ; do
 				case "$D" in 
-					Land|Santoni|Kenzo|Mido|Vince|Whyred|Tulip|Lavender|Violet|Ginkgo|Willow|Beryllium) $SHELL "`dirname $0`/Bash/installer.sh" "${D,,}"
+					Land|Santoni|Kenzo|Mido|Vince|Whyred|Tulip|Lavender|Violet|Ginkgo|Willow|Beryllium) $SHELL "`dirname $0`/Bash/installer.sh" ${D,,}
 					clear
 					break 2
 					;;
 					Raphael|Davinci) read -p "Indian Variant (y/n): " i
 					case "$i" in
-						y|Y) $SHELL "`dirname $0`/Bash/installer.sh" "${D,,}in"
+						y|Y) $n = in
+						$D = "$D$n"
+						$SHELL "`dirname $0`/Bash/installer.sh" ${D,,}
 						clear
-						break 2;
+						break 2
 						;;
-						n|N) $SHELL "`dirname $0`/Bash/installer.sh" "${D,,}"
+						n|N) $SHELL "`dirname $0`/Bash/installer.sh" ${D,,}
 						clear
-						break 2;
+						break 2
 						;;
 						*) printf "\n\nCan't you read?\n\n"
 						break
@@ -68,7 +70,7 @@ while [ "$M" != 0 ]; do
 			"Fix System Destroyed") printf "\n\n"
 				select D in "${fix[@]}" ; do
 				case "$D" in 
-					Ginkgo|Violet) $SHELL "`dirname $0`/Bash/fix.sh" "${D,,}"
+					Ginkgo|Violet) $SHELL "`dirname $0`/Bash/fix.sh" ${D,,}
 					clear
 					break 2
 					;;
