@@ -45,7 +45,7 @@ while [ "$M" != 0 ]; do
 					Raphael|Davinci) read -p "Indian Variant (y/n): " i
 					case "$i" in
 						y|Y) $n = in
-						$D = "$D$n"
+						$D+="$n"
 						$SHELL "`dirname $0`/Bash/installer.sh" ${D,,}
 						clear
 						break 2
